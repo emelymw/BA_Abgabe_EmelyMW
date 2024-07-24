@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  neo4j:
+    image: neo4j:5.22.0
+    container_name: neo4j
+    ports:
+      - "7473:7473"
+      - "7474:7474"
+      - "7687:7687"
+    restart: always
+    environment:
+      - NEO4J_AUTH=none
+
+  flask-webserver:
+    build: ./FlaskApp
+    container_name: flask-webserver
+    ports:
+    - 5000:5000

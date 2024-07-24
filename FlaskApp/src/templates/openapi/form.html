@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1>Upload OpenAPI File</h1>
+    <form method="post" enctype="multipart/form-data">
+        <br>
+        <div class="input-group">
+          <input type="file" name=file class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </div>
+    </form>
+  </div>
+{% endblock %}

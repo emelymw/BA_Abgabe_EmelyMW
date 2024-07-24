@@ -1,0 +1,82 @@
+{
+    "Order": {
+        "create": [
+            "/store/order, post"
+        ],
+        "read": [
+            "/store/order/{orderId}, get"
+        ],
+        "update": [],
+        "delete": [
+            "/store/order/{orderId}, delete"
+        ]
+    },
+    "Customer": {
+        "create": [],
+        "read": [],
+        "update": [],
+        "delete": []
+    },
+    "Address": {
+        "create": [],
+        "read": [],
+        "update": [],
+        "delete": []
+    },
+    "Category": {
+        "create": [],
+        "read": [],
+        "update": [],
+        "delete": []
+    },
+    "User": {
+        "create": [
+            "/user/createWithList, post",
+            "/user, post"
+        ],
+        "read": [
+            "/user/{username}, get"
+        ],
+        "update": [
+            "/user/{username}, put"
+        ],
+        "delete": [
+            "/user/{username}, delete"
+        ]
+    },
+    "Tag": {
+        "create": [],
+        "read": [],
+        "update": [],
+        "delete": []
+    },
+    "Pet": {
+        "create": [
+            "/pet/{petId}/uploadImage, post",
+            "/pet/{petId}, post",
+            "/pet, post"
+        ],
+        "read": [
+            "/pet/{petId}, get",
+            "/pet/findByTags, get",
+            "/pet/findByStatus, get"
+        ],
+        "update": [
+            "/pet, put"
+        ],
+        "delete": [
+            "/pet/{petId}, delete"
+        ]
+    },
+    "ApiResponse": {
+        "create": [],
+        "read": [],
+        "update": [],
+        "delete": []
+    },
+    "NO_OBJECT": [
+        "/store/inventory, get",
+        "/user/login, get",
+        "/user/logout, get"
+    ]
+}

@@ -1,0 +1,4 @@
+Flask
+neo4j
+openapi_spec_validator
+inflect
