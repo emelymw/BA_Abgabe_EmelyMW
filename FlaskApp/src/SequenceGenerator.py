@@ -301,6 +301,7 @@ class SequenceGenerator():
                 preparation = preparation + endpoint_list_preparation
                 dismantling = dismantling + endpoint_list_dismantling
 
+            # Calculate sequence_length
             if preparation:
                 sequence_length = sequence_length + self.average_sequnece_lenght(preparation)
             if dismantling:
@@ -316,6 +317,7 @@ class SequenceGenerator():
         return result
     
     def average_sequnece_lenght(self, list):
+        ''' Function, to get the average lenght of lists in a list '''
         count_lists = len(list)
         count_sequnces = sum(len(sub_list) for sub_list in list)
         average_lenght = count_sequnces / count_lists if count_lists > 0 else 0
